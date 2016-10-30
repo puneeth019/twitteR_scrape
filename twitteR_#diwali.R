@@ -5,7 +5,7 @@ lapply(load_pacakges, require, character.only = TRUE)
 
 WorkDir <- "~/DA/Projects/twitteR_scrape/"
 setwd(dir = WorkDir)
-search_string <- "Diwali" # Input search string as required
+search_string <- "diwali" # Input search string as required
 
 consumer_key <- "Insert your consumer key here"
 consumer_secret <- "Insert your consumer secret here"
