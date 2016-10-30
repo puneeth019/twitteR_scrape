@@ -7,10 +7,10 @@ WorkDir <- "~/DA/Projects/twitteR_scrape/"
 setwd(dir = WorkDir)
 search_string <- "Diwali" # Input search string as required
 
-consumer_key <- ""
-consumer_secret <- ""
-access_token <- NULL #if no access token available, set to NULL
-access_secret <- NULL #the same rules apply as access token
+consumer_key <- "Insert your consumer key here"
+consumer_secret <- "Insert your consumer secret here"
+access_token <- "Insert your access token here" #if no access token available, set to NULL
+access_secret <- "Insert your access secret here" #the same rules apply as access token
 
 setup_twitter_oauth(consumer_key = consumer_key,
                     consumer_secret = consumer_secret,
@@ -29,6 +29,8 @@ search_string_text <-
   gsub(pattern = "see", replacement = "") %>% 
   gsub(pattern = "can", replacement = "") %>%
   gsub(pattern = "now", replacement = "") %>%
+  gsub(pattern = "diwali", replacement = "") %>%
+  gsub(pattern = "happy", replacement = "") %>%
   str_replace_all(pattern = "[^a-zA-Z\\s]", replacement = " ")
 
 search_string_corpus <- Corpus(VectorSource(search_string_text)) %>% 
@@ -41,8 +43,12 @@ m<-as.matrix(tdm)
 word_freqs <- sort(rowSums(m), decreasing = TRUE)
 word_freqs<-word_freqs
 dm <- data.frame(word = names(word_freqs), freq = word_freqs)
+dm <- dm[dm$word != "diwali" & dm$word != "happy" &
+           dm$word != "wishing" & dm$word != "wishes" &
+           dm$word != "may" & dm$word != "may" & dm$word != "akbaruddinindia", ]
 
-png(paste0(WorkDir,"plots/#", search_string,".png"))
-wordcloud(dm$word, dm$freq, scale=c(6,0.5), random.order = FALSE,
-          colors = brewer.pal(n = 5, name = "Set1"), max.words = 500, min.freq = 5)
+png(paste0(WorkDir,"plots/#", search_string,".png"), height = 2000, width = 2000)
+wordcloud(dm$word, dm$freq, scale=c(16,0.5), random.order = FALSE,
+          colors= brewer.pal(5, "Set1"), max.words = Inf, min.freq = 5,
+          rot.per=.15)
 dev.off()
