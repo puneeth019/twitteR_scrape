@@ -7,8 +7,8 @@ WorkDir <- "~/DA/Projects/twitteR_scrape/"
 setwd(dir = WorkDir)
 search_string <- "Diwali" # Input search string as required
 
-consumer_key <- "LLKPhMWMTnJF0MksEU6fLZYMz"
-consumer_secret <- "pKFaI8H9emyfz5LEhZl4NfZC86c9JKPdci9hjQXP1HTfwNDzqF"
+consumer_key <- ""
+consumer_secret <- ""
 access_token <- NULL #if no access token available, set to NULL
 access_secret <- NULL #the same rules apply as access token
 
