@@ -3,7 +3,7 @@ load_pacakges <- c("RColorBrewer", "wordcloud", "tm",
 
 lapply(load_pacakges, require, character.only = TRUE)
 
-WorkDir <- "C:/DA/Projects/twitteR_scrape/"
+WorkDir <- "~/DA/Projects/twitteR_scrape/"
 setwd(dir = WorkDir)
 search_string <- "Diwali" # Input search string as required
 
