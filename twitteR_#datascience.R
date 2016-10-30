@@ -3,14 +3,14 @@ load_pacakges <- c("RColorBrewer", "wordcloud", "tm",
 
 lapply(load_pacakges, require, character.only = TRUE)
 
-WorkDir <- "C:/DA/Projects/twitteR_scrape/"
+WorkDir <- "~/DA/Projects/twitteR_scrape/"
 setwd(dir = WorkDir)
 search_string <- "datascience" # Input search string as required
 
-consumer_key <- "LLKPhMWMTnJF0MksEU6fLZYMz"
-consumer_secret <- "pKFaI8H9emyfz5LEhZl4NfZC86c9JKPdci9hjQXP1HTfwNDzqF"
-access_token <- NULL #if no access token available, set to NULL
-access_secret <- NULL #the same rules apply as access token
+consumer_key <- "Insert your consumer key here"
+consumer_secret <- "Insert your consumer secret here"
+access_token <- "Insert your access token here" #if no access token available, set to NULL
+access_secret <- "Insert your access secret here" #the same rules apply as access token
 
 setup_twitter_oauth(consumer_key = consumer_key,
                     consumer_secret = consumer_secret,
