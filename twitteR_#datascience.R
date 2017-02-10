@@ -1,5 +1,6 @@
 load_pacakges <- c("RColorBrewer", "wordcloud", "tm",
-                   "stringr", "twitteR", "httr", "devtools", "base64enc")
+                   "tidyverse", "twitteR", "httr", 
+                   "devtools", "base64enc", "magrittr")
 
 lapply(load_pacakges, require, character.only = TRUE)
 
@@ -33,11 +34,11 @@ search_string_corpus <- Corpus(VectorSource(search_string_text)) %>%
 
 tdm <- TermDocumentMatrix(search_string_corpus, 
                           control = list(stopwords = c(search_string,stopwords("english"))))
-
-m<-as.matrix(tdm)
-word_freqs <- sort(rowSums(m), decreasing = TRUE)
-word_freqs<-word_freqs
-dm <- data.frame(word = names(word_freqs), freq = word_freqs)
+   
+dm <- tdm %>%
+    as.matrix() %>%
+    sort(rowSums(.), decreasing = TRUE) %>%
+    data.frame(word = names(.), freq = .)
 
 png(paste0(WorkDir,"plots/#", search_string,".png"), height = 2000, width = 2000)
 wordcloud(dm$word, dm$freq, scale=c(12,2), random.order = FALSE,
