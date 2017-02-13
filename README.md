@@ -1,10 +1,12 @@
-# Word-Clouds based on [Twitter](https://twitter.com/?lang=en) tweets.
+# Word-Clouds based on [tweets](https://twitter.com/?lang=en).
 
-Script for these word-clouds can be found [here](https://github.com/puneeth019/twitteR_scrape/tree/master/scripts). Thanks a lot for ['twitteR'](https://cran.r-project.org/web/packages/twitteR/index.html) package!
+Script for these word-clouds can be found [here](https://github.com/puneeth019/twitteR_scrape/tree/master/scripts) and thanks a lot for ['twitteR'](https://cran.r-project.org/web/packages/twitteR/index.html) package!
 
 # #diwali
 
 ![alt_text](https://github.com/puneeth019/twitteR_scrape/blob/master/word-clouds/%23Diwali.png "#diwali")
+
+People associated words like **happiness, family, festival, light, prosperity** etc. with Diwali festival.
 
 # #datascience
 
