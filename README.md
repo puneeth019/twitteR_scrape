@@ -1,4 +1,6 @@
-Word-Clouds based on Twitter tweets
+# Word-Clouds based on [Twitter](https://twitter.com/?lang=en) tweets.
+
+Script for these word-clouds can be found [here]().
 
 # #diwali
 
