@@ -1,17 +1,17 @@
 Word-Clouds based on Twitter tweets
 
-#Diwali
+# #diwali
 
-![alt_text](https://github.com/puneeth019/twitteR_scrape/blob/master/%23Diwali.png "#Diwali")
+![alt_text](https://github.com/puneeth019/twitteR_scrape/blob/master/%23Diwali.png "#diwali")
 
-#datascience
+# #datascience
 
 ![alt_text](https://github.com/puneeth019/twitteR_scrape/blob/master/%23datascience.png "#datascience")
 
-#halloween
+# #halloween
 
 ![alt_text](https://github.com/puneeth019/twitteR_scrape/blob/master/%23halloween.png "#halloween")
 
-$india
+# #india
 
 ![alt_text](https://github.com/puneeth019/twitteR_scrape/blob/master/%23india.png "#india")
