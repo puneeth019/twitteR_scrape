@@ -4,20 +4,20 @@ Script for these word-clouds can be found [here](https://github.com/puneeth019/t
 
 # #diwali
 
-![alt_text](word-clouds/%23Diwali.png "#diwali")
+![alt_text](word-clouds/Diwali.png "#diwali")
 
 People associated words like **happiness, family, festival, light, peace, prosperity** etc. with Diwali festival.
 
 # #datascience
 
-![alt_text](word-clouds/%23datascience.png "#datascience")
+![alt_text](word-clouds/datascience.png "#datascience")
 
 It is observed that there is strong association between **IoT, MachineLearning, BigData, Analytics**, which is expected.
 
 # #halloween
 
-![alt_text](word-clouds/%23halloween.png "#halloween")
+![alt_text](word-clouds/halloween.png "#halloween")
 
 # #india
 
-![alt_text](word-clouds/%23india.png "#india")
+![alt_text](word-clouds/india.png "#india")
