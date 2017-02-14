@@ -4,7 +4,7 @@ Script for these word-clouds can be found [here](https://github.com/puneeth019/t
 
 # #diwali
 
-![alt_text](word-clouds/Diwali.png "#diwali")
+![alt_text](word-clouds/diwali.png "#diwali")
 
 People associated words like **happiness, family, festival, light, peace, prosperity** etc. with Diwali festival.
 
