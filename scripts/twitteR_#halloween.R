@@ -39,7 +39,7 @@ word_freqs <- sort(rowSums(m), decreasing = TRUE)
 word_freqs<-word_freqs
 dm <- data.frame(word = names(word_freqs), freq = word_freqs)
 
-png(paste0(WorkDir,"plots/#", search_string,".png"), height = 2000, width = 2000)
+png(paste0(WorkDir,"plots/", search_string,".png"), height = 2000, width = 2000)
 wordcloud(dm$word, dm$freq, scale=c(12,2), random.order = FALSE,
           colors= brewer.pal(5, "Set1"), max.words = 800, min.freq = 5,
           rot.per=.15)
