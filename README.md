@@ -21,3 +21,5 @@ It is observed that there is strong association between **IoT, MachineLearning, 
 # #india
 
 ![alt_text](word-clouds/india.png "#india")
+
+The above cloud was created during *Diwali* period.
